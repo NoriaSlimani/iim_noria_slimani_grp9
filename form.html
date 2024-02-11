@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="form.css" /> 
+  <title>Formulaire d'inscription</title>
+</head>
+<header>
+    <div class="container">
+      <h1>IIM</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="form.html">Formulaire d'inscription</a></li>
+        </ul>
+      </nav>
+    </div>
+</header>
+
+<body>
+
+    <div class="form-wrapper">
+        <div class="message-error">
+          <ul></ul>
+        </div>
+      
+        <div class="message-success">
+          Formulaire envoyé avec succès !
+        </div>
+      
+        <form action="" method="post" enctype="multipart/form-data" id="inscription-form">
+            <div>
+                <label for="lastname">Nom</label>
+                <input type="text" name="lastname" id="lastname" >
+            </div>
+            <div>
+              <label for="firstname">Prénom</label>
+              <input type="text" name="firstname" id="firstname" >
+            </div>
+            <div>
+                <label for="email">Mail</label>
+                <input type="email" name="email" id="email" >
+            </div>
+            <div>
+                <label for="classroom">Classe actuelle</label>
+                <div>
+                  <input type="radio" id="1er" name="classroom" value="1er"  checked>
+                  <label for="1er">1er</label>
+                </div>
+                <div>
+                  <input type="radio" id="Terminal" name="classroom" value="Terminal" >
+                  <label for="Terminal">Terminal</label>
+                </div>
+            </div>
+            <div>
+              <label for="axe-select">Votre axe préféré :</label>
+              <select name="axe" id="axe-select" >
+                <option value=""></option>
+                <option value="crea">Créa</option>
+                <option value="e-business">E-Business</option>
+                <option value="coding">Coding</option>
+                <option value="3d">3D</option>
+                <option value="jv">JV</option>
+              </select>
+            </div>
+            <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+
+<script src="main.js"></script>
+</body>
+
+<footer>
+    <p class="toggle-mode">Modifier le mode</p>
+  </footer>
+</html>
